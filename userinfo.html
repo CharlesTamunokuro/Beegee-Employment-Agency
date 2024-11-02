@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>BeeGee - JobEntry </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.icon" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Custom CSS for additional styling -->
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 50px auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 1.2rem;
+            color: #555;
+            border-bottom: 2px solid #ea611d;
+            padding-bottom: 5px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .submit-btn {
+            background-color: #ea611d;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #e67e22;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
+            <h3 class="m-0 text-primary header-txt">BEEGEE EMPLOYMENT AGENCY</h3>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <div class="nav-item dropdown">
+                    <a href="job-list.html" class="nav-link ">Jobs</a>
+                    <!-- <div class="dropdown-menu rounded-0 m-0">
+                        <a href="job-list.html" class="dropdown-item">Job List</a>
+                        <a href="job-detail.html" class="dropdown-item">Job Detail</a>
+                    </div> -->
+                </div>
+                <!-- <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu rounded-0 m-0">
+                        <a href="category.html" class="dropdown-item">Job Category</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="404.html" class="dropdown-item">404</a>
+                    </div>
+                </div> -->
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <!-- <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Post A Job<i class="fa fa-arrow-right ms-3"></i></a> -->
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+<div class="container"> 
+    <div class="form-container">
+        <h1>Job Application Form</h1>
+        <form action="https://formsubmit.co/beegeeemploymentagency@gmail.com" method="post">
+            <!-- Personal Data Section -->
+            <h2>Personal Data</h2>
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" Name="FirstName" class="form-control" id="firstName" placeholder="Enter your first name" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="middleName" class="form-label">Middle Name</label>
+                    <input type="text" Name="MiddleName" class="form-control" id="middleName" placeholder="Enter your middle name">
+                </div>
+                <div class="col-md-4">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" Name="lastName" class="form-control" id="lastName" placeholder="Enter your last name" required>
+                </div>
+            </div>
+            
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="residentialAddress" class="form-label">Residential Address</label>
+                    <textarea class="form-control" name="Residential-Address" id="residentialAddress" rows="2" placeholder="Enter your residential address" required></textarea>
+                </div>
+                <div class="col-md-6">
+                    <label for="homeTownAddress" class="form-label">Home Town Address</label>
+                    <textarea class="form-control" name="HomeTownAddress" id="homeTownAddress" rows="2" placeholder="Enter your hometown address" required></textarea>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="nearestBusStop" class="form-label">Nearest Bus Stop</label>
+                    <input type="text" name="NearestBusStop" class="form-control" id="nearestBusStop" placeholder="Enter nearest bus stop">
+                </div>
+                <div class="col-md-6">
+                    <label for="phoneNumber1" class="form-label">Phone Number 1</label>
+                    <input type="tel" name="PhoneNumber" class="form-control" id="phoneNumber1" placeholder="Enter your primary phone number" required>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="alternateNumber2" class="form-label">Alternate Number 2</label>
+                    <input type="tel" name="AlternateNumber" class="form-control" id="alternateNumber2" placeholder="Enter an alternate phone number">
+                </div>
+                <div class="col-md-6">
+                    <label for="whatsAppNumber" class="form-label">WhatsApp Number</label>
+                    <input type="tel" name="WhatsAppNumber" class="form-control" id="whatsAppNumber" placeholder="Enter your WhatsApp number">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" name="Email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="validID" class="form-label">Valid ID Card Name/NO</label>
+                    <input type="text" name="" class="form-control" id="validID" placeholder="Enter ID card details">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <label for="maritalStatus" class="form-label">Marital Status</label>
+                    <input type="text" name="MaritalStatus" class="form-control" id="maritalStatus" placeholder="Enter marital status">
+                </div>
+                <div class="col-md-4">
+                    <label for="gender" class="form-label">Gender</label>
+                    <select id="gender" name="Gender" class="form-select" required>
+                        <option selected disabled>Select gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="dob" class="form-label">Date of Birth</label>
+                    <input type="date" name="DateOfBirth" class="form-control" id="dob" required>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <label for="stateOfOrigin" class="form-label">State of Origin</label>
+                    <input type="text" class="form-control" name="StateOfOrigin" id="stateOfOrigin" placeholder="Enter your state of origin">
+                </div>
+                <div class="col-md-4">
+                    <label for="lga" class="form-label">L.G.A</label>
+                    <input type="text" name="LocalGovermentArea" class="form-control" id="lga" placeholder="Enter your LGA">
+                </div>
+                <div class="col-md-4">
+                    <label for="nationality" class="form-label">Nationality</label>
+                    <input type="text" name="Nationality" class="form-control" id="nationality" placeholder="Enter your nationality">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="religion" class="form-label">Religion</label>
+                    <input type="text" name="Religion" class="form-control" id="religion" placeholder="Enter your religion">
+                </div>
+                <div class="col-md-6">
+                    <label for="socialMedia">Social Media Accounts</label>
+                    <input type="text" class="form-control mb-2" id="facebook" placeholder="Facebook">
+                    <input type="text" class="form-control" id="instagram" placeholder="Instagram">
+                </div>
+            </div>
+
+            <!-- Job Location Section -->
+            <h2>Job Locations</h2>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="location1" class="form-label">Location 1</label>
+                    <input type="text" name="location1" class="form-control" id="location1" placeholder="Job Location 1" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="location2" class="form-label">Location 2</label>
+                    <input type="text" name="location2" class="form-control" id="location2" placeholder="Job Location 2">
+                </div>
+            </div>
+
+            <!-- Degree Section -->
+            <h2>Degree</h2>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="lowestDegree" class="form-label">Lowest Degree</label>
+                    <input type="text" name="lowestDegree" class="form-control" id="lowestDegree" placeholder="Enter your lowest degree">
+                </div>
+                <div class="col-md-6">
+                    <label for="highestDegree" class="form-label">Highest Degree</label>
+                    <input type="text" name="highestDegree" class="form-control" id="highestDegree" placeholder="Enter your highest degree">
+                </div>
+            </div>
+
+            <!-- Job Description Section -->
+            <h2>Job Description</h2>
+            <div class="row mb-3">
+                <div class="col-md-12">
+                    <label for="jobType" class="form-label">Type of Job</label><br>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="jobType" id="fullTime" value="Full Time">
+                        <label class="form-check-label" for="fullTime">Full Time</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="jobType" id="partTime" value="Part Time">
+                        <label class="form-check-label" for="partTime">Part Time</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="jobType" id="regular" value="Regular">
+                        <label class="form-check-label" for="regular">Regular</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="jobType" id="contract" value="Contract">
+                        <label class="form-check-label" for="contract">Contract</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-12">
+                    <label for="applicablePositions" class="form-label">Three Applicable Positions</label>
+                    <input type="text" name="position1" class="form-control mb-2" id="position1" placeholder="Position 1">
+                    <input type="text" name="position2" class="form-control mb-2" id="position2" placeholder="Position 2">
+                    <input type="text" name="position3" class="form-control" id="position3" placeholder="Position 3">
+                </div>
+            </div>
+
+            <!-- Payment Section -->
+            <h2>Payment</h2>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="lowestSalary" class="form-label">Lowest Salary Expectation</label>
+                    <input type="number" name="lowestSalary" class="form-control" id="lowestSalary" placeholder="Enter your lowest salary expectation">
+                </div>
+                <div class="col-md-6">
+                    <label for="highestSalary" class="form-label">Highest Salary Expectation</label>
+                    <input type="number" name="highestSalary" class="form-control" id="highestSalary" placeholder="Enter your highest salary expectation">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="negotiable" class="form-label">Is the lowest salary negotiable?</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="negotiable" id="yes" value="Yes">
+                        <label class="form-check-label" for="yes">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="negotiable" id="no" value="No">
+                        <label class="form-check-label" for="no">No</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Family Contact Section -->
+            <h2>Family Contact</h2>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="familyName1" class="form-label">A. Name</label>
+                    <input type="text" name="familyName1" class="form-control" id="familyName1" placeholder="Enter name of family member">
+                </div>
+                <div class="col-md-3">
+                    <label for="familyPhone1" class="form-label">Phone No</label>
+                    <input type="tel" name="familyPhone1" class="form-control" id="familyPhone1" placeholder="Enter phone number">
+                </div>
+                <div class="col-md-3">
+                    <label for="relationship1" class="form-label">Relationship</label>
+                    <input type="text" name="relationship1" class="form-control" id="relationship1" placeholder="Enter relationship">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-12">
+                    <label for="familyAddress1" class="form-label">Address</label>
+                    <textarea class="form-control" name="familyAddress1" id="familyAddress1" rows="2" placeholder="Enter address"></textarea>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="familyName2" class="form-label">B. Name</label>
+                    <input type="text" name="familyName2" class="form-control" id="familyName2" placeholder="Enter name of family member">
+                </div>
+                <div class="col-md-3">
+                    <label for="familyPhone2" class="form-label">Phone No</label>
+                    <input type="tel" name="familyPhone2" class="form-control" id="familyPhone2" placeholder="Enter phone number">
+                </div>
+                <div class="col-md-3">
+                    <label for="relationship2" class="form-label">Relationship</label>
+                    <input type="text" name="relationship2" class="form-control" id="relationship2" placeholder="Enter relationship">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-12">
+                    <label for="familyAddress2" class="form-label">Address</label>
+                    <textarea class="form-control" name="familyAddress2" id="familyAddress2" rows="2" placeholder="Enter address"></textarea>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-12">
+                    <input type="checkbox" name="" id="termsCheckbox" class="form-check-input mx-2" required>I've read the <a href="terms-and-conditions.html" class="text-secondary" target="_blank">Terms and Conditions</a><br>
+
+                    <small>
+                        <em>
+                            Please note that a non-refundable application fee of 3,500 is required to process your job application
+                        </em>
+                    </small>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="d-grid">
+                <button type="submit" id="submitBtn" class="btn submit-btn btn-lg">Submit Application</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    // Enable Submit button only when the checkbox is checked
+    const termsCheckbox = document.getElementById("termsCheckbox");
+    const submitBtn = document.getElementById("submitBtn");
+
+    termsCheckbox.addEventListener("change", function() {
+      if (this.checked) {
+        submitBtn.disabled = false;
+      } else {
+        submitBtn.disabled = true;
+      }
+    });
+
+    // Handle form submission
+    document.getElementById("signupForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent form submission for demo purposes
+      alert("Personal Info Submitted successfully!");
+
+      window.location.href = "index.html";
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-white mb-4">Company</h5>
+                <p>
+                    BeeGee Employment Agency is a trusted recruitment platform dedicated to helping job seekers connect with top employers across various industries. 
+                </p>
+                <!-- <a class="btn btn-link text-white-50" href="">About Us</a>
+                <a class="btn btn-link text-white-50" href="">Contact Us</a>
+                <a class="btn btn-link text-white-50" href="">Our Services</a>
+                <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
+                <a class="btn btn-link text-white-50" href="">Terms & Condition</a> -->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-white mb-4">Quick Links</h5>
+                <a class="btn btn-link text-white-50" href="about.html">About Us</a>
+                <a class="btn btn-link text-white-50" href="contact.html">Contact Us</a>
+                <a class="btn btn-link text-white-50" href="about.html">Our Services</a>
+                <!-- <a class="btn btn-link text-white-50" href="">Privacy Policy</a> -->
+                <!-- <a class="btn btn-link text-white-50" href="">Terms & Condition</a> -->
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-white mb-4">Contact</h5>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>105 Fleet House Olu Obasanjo Road, Port Harcourt, Rivers State</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+234 812 0744727, +234 081 794673034</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@beegee.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social header-txt" href="https://www.instagram.com/beegeeemploymentagency/profilecard/?igsh=MXhobDZwcm5tdXZoHQ=="><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-social header-txt" href="https://www.facebook.com/share/RrG5kYnxYYbsCb3R/"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social header-txt" href="https://www.tiktok.com/@beegeeemploymentagency?_r=1&_d=e5dkfk0ck55djg&sec_uid=MS4wLjABAAAA1fUHwmFj-2iodTDCRj7NY2E5xeNbTkRftoODwudZp40NRxaqcFES4UYkUuBOU--n&share_author_id=7052513374089462789&sharer_language=en&source=h5_m&u_code=dmiicddg99c0kg&timestamp=1729604771&user_id=7052513374089462789&sec_user_id=MS4wLjABAAAA1fUHwmFj-2iodTDCRj7NY2E5xeNbTkRftoODwudZp40NRxaqcFES4UYkUuBOU--n&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7418888896450791173&share_link_id=efcdd932-6f18-4120-a28f-ba04c0d4be1e&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb0229&social_share_type=5&enable_checksum=1"><i class="fab fa-tiktok"></i></a>
+                    <a class="btn btn-outline-light btn-social header-txt" href="https://www.linkedin.com/in/beegee-employment-agency-68b82b22a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-lg-3">
+                <h5 class="text-white mb-4">Newsletter</h5>
+                <p>Subscribe to our newsletter for exclusive job updates, career advice, and industry insights straight to your inbox!</p>
+                <div class="position-relative mx-auto" style="max-width: 400px;">
+                    <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <!-- &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.  -->
+                    
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    <!-- Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> -->
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-menu header-txt">
+                        <a href="" class="header-txt">Home</a>
+                        <a href="" class="header-txt">Cookies</a>
+                        <a href="" class="header-txt">Help</a>
+                        <a href="" class="header-txt">FQAs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+                    <script src="lib/wow/wow.min.js"></script>
+                    <script src="lib/easing/easing.min.js"></script>
+                    <script src="lib/waypoints/waypoints.min.js"></script>
+                    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+                
+                    <!-- Template Javascript -->
+                    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+ 
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+                                       
+
+
+
+
+
+
+
+
+
+
+
+                    
